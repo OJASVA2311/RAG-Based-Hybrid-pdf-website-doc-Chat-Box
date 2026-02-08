@@ -25,18 +25,35 @@ Hybrid Retrieval-Augmented Generation (RAG):- system that allows users to chat w
 *BM25 Retriever
 *MMR Retriever
 
+## ▶️ Run the Project Locally
 
-📂 Project Structure
-Hybrid-RAG-System/
-│
-├── main.py # Entry point
-├── loader.py # Document loading
-├── splitter.py # Chunking logic
-├── vectorstore.py # Embeddings & vector DB
-├── retrievers.py # MMR, BM25, RRF logic
-├── llm.py # LLM configuration
-├── chat.py # Chat loop
-├── docs/ # Input text documents
-└── README.md
+This project is designed to be run **locally** on your machine.
+
+### 🔧 Prerequisites
+
+Make sure you have the following installed:
+
+- **Python 3.9+**
+- **Git**
+- **Ollama** (for running the local LLM)
+
+---
+HOW TO RUN THIS CODE
+1 pip install -r requirements.txt
+2 ollama serve
+3 ollama pull llama3.1:8b
+  ollama pull nomic-embed-text
+4 Place your .txt files inside the docs/ folder
+(Optional) Add a PDF file and update the path in main.py
+5️⃣ Run the Application
+python main.py
+6️⃣ Ask Questions
+
+Once the program starts, type your question in the terminal:
+
+You: What is this document about?
+
+
+7 Type exit to quit the application.
 
 
